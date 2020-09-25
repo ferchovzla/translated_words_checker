@@ -7,9 +7,10 @@ class LanguageDetector():
     def __init__(self, language):
       self.language = language
       self.not_translated = set()
-      self.reserved_words = ["VPN", "GOOSE VPN", "NederlandsEnglishEspañolPolskiDeutschFrançaisMagyarItaliano", "VPNProveedores", "costosoSin", "ExpressVPNNordVPNIPVanishPIACactus", "IPVanish", "España?", "ExpressVPN", "ExpressVPN★★★★★ ★★★★★", "ProtonVPN", "ExpressVPN★★★★★", "CactusVPN", "GratuitosNavegación", "Trust.Zone", "NordVPN★★★★★", "VPNExpressVPNNordVPNIPVanishPIACactus", "PIA", "RUSVPN", "NordVPN", "ArenaVision", "★★★★★ ★★★★★", "Surfshark", "Magyar", "Cyberghost", "★★★★★", "★", "Netflix", "DirectTV", "Blog", "Polski", "Español", "Français", "Deutsch", "Nederlands", "English", "NederlandsEnglishEspañolPolskiDeutschFrançaisMagyarItaliano","Italiano"]
+      self.reserved_words = ["Android", "Bittorrent", "IKEv2", "Kodi", "VPN", "GOOSE VPN", "NederlandsEnglishEspañolPolskiDeutschFrançaisMagyarItaliano", "VPNProveedores", "costosoSin", "ExpressVPNNordVPNIPVanishPIACactus", "IPVanish", "España?", "ExpressVPN", "ExpressVPN★★★★★ ★★★★★", "ProtonVPN", "ExpressVPN★★★★★", "CactusVPN", "GratuitosNavegación", "Trust.Zone", "NordVPN★★★★★", "VPNExpressVPNNordVPNIPVanishPIACactus", "PIA", "RUSVPN", "NordVPN", "ArenaVision", "★★★★★ ★★★★★", "Surfshark", "Magyar", "Cyberghost", "★★★★★", "★", "Netflix", "DirectTV", "Blog", "Polski", "Español", "Français", "Deutsch", "Nederlands", "English", "NederlandsEnglishEspañolPolskiDeutschFrançaisMagyarItaliano","Italiano"]
       self.bad_chars = ["*", "?", "!", "¿", "¡", ","]
       self.words_checked = set()
+      self.html_blocks = set()
 
     def is_in_setlanguage(self, quote):
 
